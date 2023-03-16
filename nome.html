@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Nome</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #primeironome{
+            border: 2;
+        }
+    </style>
+    <p>Nome Completo</p>
+    <input id="nomecompleto" type="text" size="50">
+    <button type= "button" onclick= "botao()" > >>> </button>
+    <p> Nome : <p id="primeironome"></p>
+    <p> Sobrenome : <p id ="segundonome"></p>
+
+
+    
+
+    <script>
+        function botao()
+        {
+            let nome0 = document.getElementById ("nomecompleto").value;
+           let nome1 =nome0.split(" ");
+           let nome2 = (nome1.at( 0))
+           let nome3 = (nome1.at(-1))
+           let primeironomef = document.getElementById("primeironome").innerHTML = nome2
+           let segundonomef = document.getElementById("segundonome").innerHTML = nome3
+          
+        }
+    
+        
+
+
+    </script>
+
+
+</body>
+</html>
